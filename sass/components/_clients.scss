@@ -1,0 +1,81 @@
+.clients {
+  &-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-container {
+    @include container();
+  }
+
+  &-list {
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    @include transition(all);
+
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+      fill: currentColor;
+    }
+  }
+}
+
+/*Логотипы клиентов*/
+
+.logo {
+  fill: currentColor;
+
+  &.yaco {
+    width: 44px;
+    height: 49px;
+  }
+
+  &.tagline {
+    width: 40px;
+    height: 52px;
+  }
+
+  &.company {
+    width: 41px;
+    height: 42px;
+  }
+
+  &.foster {
+    width: 79px;
+    height: 42px;
+  }
+
+  &.brand {
+    width: 59px;
+    height: 47px;
+  }
+
+  &.taglinecompany {
+    width: 88px;
+    height: 45px;
+  }
+}
